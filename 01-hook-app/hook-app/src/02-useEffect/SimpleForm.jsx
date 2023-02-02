@@ -57,15 +57,10 @@ export const SimpleForm = () => {
     value={email}
     onChange={ onInputChange}
     />
-
  
     {
      ( username === 'leito2')&&( <Message />)
     }
-
-    
-
-
 
     </>
 
