@@ -1,5 +1,6 @@
 import { useFetch } from "../hooks/useFetch";
 import { userCounter } from "../hooks/userCounter";
+import {vers,biblequote} from "./"
 
 export const MultipleCustomHooks = () => {
   const {counter,increment} = userCounter(1);
@@ -33,16 +34,7 @@ export const MultipleCustomHooks = () => {
         <hr />
         {
         isLoading 
-        ?(
-        <div className="alert alert-info text-center">
-          Loading ...
-        </div>
-        ): (
-          <blockquote className= "blockquote text-end">
-            <p className="mb-1"> {escritura} </p>
-            <footer className="blockquote-footer"> {versiculo} </footer>
-          </blockquote>
-          )
+        ? <vers escritura={escritura} versiculo={versiculo} /> : <biblequote  escritura={escritura} versiculo={versiculo} />
         }
         <button 
         disable={isLoading}
