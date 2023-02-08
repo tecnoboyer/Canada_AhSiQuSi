@@ -4,6 +4,7 @@ import {vers,biblequote} from "./"
 
 export const MultipleCustomHooks = () => {
   const {counter,increment} = userCounter(1);
+  
 
 
 

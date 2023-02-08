@@ -6,10 +6,7 @@ export const Layout = () => {
   const {counter,increment} = userCounter(1);
 
     const {escritura,versiculo, isLoading, hasError} = useFetch(`https://api.scripture.api.bible/v1/bibles/65eec8e0b60e656b-01/verses/MAT.11.${counter}`);
-    console.log (' escritura:' +escritura)
-    console.log (' versiculo:' +versiculo)
-    console.log (' counter:' +counter)
-    console.log (' hasError:' +hasError)
+
 
     // ${counter}
 
